@@ -3,8 +3,6 @@
   "version": "0.0.0",
   "description": "Drag drop for react",
   "main": "dist/index.js",
-  "module": "dist/index.esm.js",
-  "typings": "dist/index.d.ts",
   "scripts": {
     "build": "rollup -c"
   },

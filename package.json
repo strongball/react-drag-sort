@@ -1,12 +1,12 @@
 {
   "name": "@stball/dragsort",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Drag drop for react",
   "main": "dist/index.js",
   "scripts": {
     "build": "rollup -c"
   },
-  "author": "",
+  "author": "strongball",
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
@@ -20,5 +20,13 @@
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-typescript2": "^0.30.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/strongball/react-drag-sort.git"
+  },
+  "bugs": {
+    "url": "https://github.com/strongball/react-drag-sort/issues"
+  },
+  "homepage": "https://github.com/strongball/react-drag-sort#readme"
 }

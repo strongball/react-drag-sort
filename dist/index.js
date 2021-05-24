@@ -30306,17 +30306,6 @@ if (process.env.NODE_ENV === 'production') {
   module.exports = reactDom_development;
 }
 });
-reactDom.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
-reactDom.createPortal;
-reactDom.findDOMNode;
-reactDom.flushSync;
-reactDom.hydrate;
-reactDom.render;
-reactDom.unmountComponentAtNode;
-reactDom.unstable_batchedUpdates;
-reactDom.unstable_createPortal;
-reactDom.unstable_renderSubtreeIntoContainer;
-reactDom.version;
 
 var ContentRef = /** @class */ (function (_super) {
     __extends(ContentRef, _super);

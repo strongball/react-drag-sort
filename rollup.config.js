@@ -1,6 +1,4 @@
 import react from 'react';
-import reactDom from 'react-dom';
-
 import typescript from "rollup-plugin-typescript2";
 import commonjs from "rollup-plugin-commonjs";
 import external from "rollup-plugin-peer-deps-external";
@@ -30,7 +28,7 @@ export default {
       include: ["node_modules/**"],
       namedExports: {
         react: Object.keys(react),
-        'react-dom': Object.keys(reactDom)
+        // 'react-dom': Object.keys(reactDom)
       }
     })
   ]

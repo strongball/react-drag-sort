@@ -1,6 +1,4 @@
-import react from 'react';
 import typescript from "rollup-plugin-typescript2";
-import commonjs from "rollup-plugin-commonjs";
 import external from "rollup-plugin-peer-deps-external";
 import resolve from "rollup-plugin-node-resolve";
 
@@ -16,6 +14,7 @@ export default {
       sourcemap: true
     }
   ],
+  external: ['react', 'react-dom'],
   plugins: [
     external(),
     resolve(),
@@ -23,13 +22,6 @@ export default {
       rollupCommonJSResolveHack: true,
       exclude: "**/__tests__/**",
       clean: true
-    }),
-    commonjs({
-      include: ["node_modules/**"],
-      namedExports: {
-        react: Object.keys(react),
-        // 'react-dom': Object.keys(reactDom)
-      }
     })
   ]
 };
